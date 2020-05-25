@@ -1,3 +1,11 @@
+'''
+Faraday Penetration Test IDE
+Copyright (C) 2013  Infobyte LLC (http://www.infobytesec.com/)
+See the file 'doc/LICENSE' for the license information
+
+'''
+from __future__ import absolute_import
+
 import requests
 import simplejson
 
@@ -65,3 +73,4 @@ def reposify_search(key, banner, filters, page):
         params['filters'] = filters
     res = api_request(key, '/v1/insights/search', params, None, 'https://api.reposify.com', 'get', 1)
     return res
+# I'm Py3
